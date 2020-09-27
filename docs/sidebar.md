@@ -1,2 +1,2 @@
 - [简介](./index)
-- [2020/09/27-The WET Codebase](./notes/The-WET-Codebase)
+- [The WET Codebase 读后感](./notes/The-WET-Codebase)
