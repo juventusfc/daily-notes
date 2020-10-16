@@ -234,6 +234,28 @@ dispatch(fetchTasks()); // dispatch 异步 action
 5. 执行其他代码
 6. 异步请求返回，dispatch 同步 action： FETCH_TASKS_SUCCEEDED 或 FETCH_TASKS_FAILED，reducer 执行更改 store，页面更新
 
+## 中间件
+
+Redux 借用了 Express.js 中的中间件概念，是位于 action 和 store 之间的代码，也就是说，作用于 dispatch action 之后，reducer 执行之前。从设计上来说，相当于封装了原始 dispatch 功能，使 dispatch 功能更强大。
+
+常用的中间件有：
+
+- redux-thunk：支持异步 action
+- logger：action 记录
+- 数据分析中间件
+- API 中间件。与服务器交互的逻辑都是类似的：
+
+  - 1 个异步 action
+  - 3 个同步 action：started、succeeded、failed
+  - 3 个同步 action 对应的 reducer
+
+  当有很多这种请求时，写模板代码太麻烦了。为了减少这种模板代码，可以将这些逻辑提取到 API 中间件中，这样，只需要写：
+
+  - 1 个异步 action
+  - 3 个同步 action 对应的 reducer
+
+  但是，需不需要这么提取，还是需要看项目和人员。
+
 ## 扩展（TODO）
 
 - GraphQL

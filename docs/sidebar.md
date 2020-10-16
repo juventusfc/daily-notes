@@ -2,3 +2,4 @@
 - [The WET Codebase 读后感](./notes/The-WET-Codebase)
 - [Redux 实战-读书笔记](./notes/Redux实战)
 - [Why Do We Write super(props)? 读后感](<./notes/Why-Do-We-Write-super(props)>)
+- [How Does React Tell a Class from a Function 读后感](./notes/How-Does-React-Tell-a-Class-from-a-Function)
