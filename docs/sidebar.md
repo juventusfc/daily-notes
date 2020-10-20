@@ -3,3 +3,4 @@
 - [Redux 实战-读书笔记](./notes/Redux实战)
 - [Why Do We Write super(props)? 读后感](<./notes/Why-Do-We-Write-super(props)>)
 - [How Does React Tell a Class from a Function 读后感](./notes/How-Does-React-Tell-a-Class-from-a-Function)
+- [Why Do React Elements Have a \$\$typeof Property 读后感](./notes/Why-Do-React-Elements-Have-a-$$typeof-Property)
