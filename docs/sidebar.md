@@ -1,4 +1,5 @@
 - [简介](./index)
+- [柠檬水摊与听人劝的故事](./notes/柠檬水摊与听人劝的故事)
 - [The WET Codebase 读后感](./notes/The-WET-Codebase)
 - [Redux 实战-读书笔记](./notes/Redux实战)
 - [Why Do We Write super(props)? 读后感](<./notes/Why-Do-We-Write-super(props)>)
