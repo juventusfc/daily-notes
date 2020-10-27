@@ -242,6 +242,17 @@ Redux 借用了 Express.js 中的中间件概念，是位于 action 和 store �
 
 - redux-thunk：支持异步 action
 - logger：action 记录
+
+  ```javascript
+  // 中间件基本套路
+  const logger = (store) => (next) => (action) => {
+    console.log("dispatching", action);
+    let result = next(action);
+    console.log("next state", store.getState());
+    return result;
+  };
+  ```
+
 - 数据分析中间件
 - API 中间件。与服务器交互的逻辑都是类似的：
 
@@ -256,6 +267,8 @@ Redux 借用了 Express.js 中的中间件概念，是位于 action 和 store �
 
   但是，需不需要这么提取，还是需要看项目和人员。
 
+## 处理复杂的副作用
+
 ## 扩展（TODO）
 
 - GraphQL
@@ -267,3 +280,6 @@ Redux 借用了 Express.js 中的中间件概念，是位于 action 和 store �
 - Toy-React
 - Toy-React-Redux
 - Toy-Redux-Thunk
+- Toy-Redux-Saga
+- 生成器
+- 迭代器
